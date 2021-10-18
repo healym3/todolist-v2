@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB");
+mongoose.connect("mongodb+srv://admin-mac:test-123@cluster0.lpqfl.mongodb.net/todolistDB?retryWrites=true&w=majority");
 
 // const items = ["Buy Food", "Cook Food", "Eat Food"];
 // const workItems = [];
