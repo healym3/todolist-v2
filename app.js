@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-mac:test-123@cluster0.lpqfl.mongodb.net/todolistDB?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://admin-mac:" + process.env.MONGOPW + "@cluster0.lpqfl.mongodb.net/todolistDB?retryWrites=true&w=majority");
 
 // const items = ["Buy Food", "Cook Food", "Eat Food"];
 // const workItems = [];
